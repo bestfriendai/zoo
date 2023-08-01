@@ -66,18 +66,23 @@ export default function Nav() {
               onClick={() => redirectToRandom()}
               className="hover:underline text-sm sm:text-lg "
             >
-              <h4>ShibariumAI </h4>
+              <h4>Zoo </h4>
             </button>
-          
+            <Link
+              className="flex text-sm lg:text-base sm:pl-2 text-zinc-500 font-light hover:underline"
+              href="https://github.com/replicate/zoo?utm_source=project&utm_campaign=zoo"
+            >
+              Open Source
+            </Link>
             <Link
               className="flex text-sm lg:text-base sm:pl-1"
-              href="https://ShibariumAI.com"
+              href="https://replicate.com?utm_source=project&utm_campaign=zoo"
             >
               <span className="text-zinc-500 font-light hover:underline">
                 <span className="hidden sm:inline text-zinc-500 font-light">
-                  Image AI generator
+                  Playground
                 </span>
-                <span className="sm:hidden inline">Powered</span> by ShibariumAI
+                <span className="sm:hidden inline">Powered</span> by Replicate
               </span>
             </Link>
           </div>
@@ -96,25 +101,38 @@ export default function Nav() {
             ) : (
               <div className="flex">
                 <Link
-                  href="https://shibariumai.com"
+                  href="https://github.com/replicate/zoo?utm_source=project&utm_campaign=zoo"
                   type="button"
                   className="inline-flex mr-3 items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700"
                 >
                   <CodeBracketIcon className="h-5 w-5 bg- text-gray-100 mr-2 hidden sm:inline-flex" />{" "}
-                  ShibariumAI Website
-                </Link>
-                <Link
-                  href="https://t.me/OfficialShibaAI"
-                  type="button"
-                  className="inline-flex mr-3 items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700"
-                >
-                  <CodeBracketIcon className="h-5 w-5 bg- text-gray-100 mr-2 hidden sm:inline-flex" />{" "}
-                  ShibariumAI Telegram
+                  Code
                 </Link>
                 {id && (
-                
+                  <button
+                    onClick={() => copyToClipboard()}
+                    type="button"
+                    className="animate-drop mr-3 inline-flex justify-center items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                  >
+                    {linkCopied ? (
+                      "Copied!"
+                    ) : (
+                      <span className="flex">
+                        <DocumentDuplicateIcon className="h-5 w-5 text-gray-400 mr-2 hidden sm:inline-flex" />
+                        Copy{" "}
+                        <span className="hidden sm:inline-flex pl-1">link</span>
+                      </span>
+                    )}
+                  </button>
                 )}
-              
+                <Link
+                  href="/memories"
+                  type="button"
+                  className="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                >
+                  <PhotoIcon className="h-5 w-5 text-gray-400 mr-2 hidden sm: inline-flex" />
+                  Memories
+                </Link>
               </div>
             )}
           </div>
