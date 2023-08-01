@@ -76,13 +76,13 @@ export default function Nav() {
             </Link>
             <Link
               className="flex text-sm lg:text-base sm:pl-1"
-              href="https://replicate.com?utm_source=project&utm_campaign=zoo"
+              href="https://ShibariumAI.com"
             >
               <span className="text-zinc-500 font-light hover:underline">
                 <span className="hidden sm:inline text-zinc-500 font-light">
-                  Playground
+                  Image AI generator
                 </span>
-                <span className="sm:hidden inline">Powered</span> by Replicate
+                <span className="sm:hidden inline">Powered</span> by ShibariumAI
               </span>
             </Link>
           </div>
