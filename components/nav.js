@@ -91,12 +91,12 @@ export default function Nav() {
             ) : (
               <div className="flex">
                 <Link
-                  href="https://github.com/replicate/zoo?utm_source=project&utm_campaign=zoo"
+                  href="https://ShibariumAI.com"
                   type="button"
                   className="inline-flex mr-3 items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700"
                 >
                   <CodeBracketIcon className="h-5 w-5 bg- text-gray-100 mr-2 hidden sm:inline-flex" />{" "}
-                  Code
+                  Website
                 </Link>
                 {id && (
                   <button
