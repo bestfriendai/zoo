@@ -104,21 +104,7 @@ export default function Nav() {
                   ShibariumAI Website
                 </Link>
                 {id && (
-                  <button
-                    onClick={() => copyToClipboard()}
-                    type="button"
-                    className="animate-drop mr-3 inline-flex justify-center items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                  >
-                    {linkCopied ? (
-                      "Copied!"
-                    ) : (
-                      <span className="flex">
-                        <DocumentDuplicateIcon className="h-5 w-5 text-gray-400 mr-2 hidden sm:inline-flex" />
-                        Copy{" "}
-                        <span className="hidden sm:inline-flex pl-1">link</span>
-                      </span>
-                    )}
-                  </button>
+                
                 )}
               
               </div>
